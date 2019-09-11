@@ -1,9 +1,7 @@
 
-import {execFile} from 'child_process';
-import {promisify} from 'util';
-
-// might be from using in conjunction with @micburks/jspm-loader
-import serve from '../@micburks/serve/index.js';
+const {execFile} = require('child_process');
+const {promisify} = require('util');
+const serve = require('./index.js');
 
 const run = promisify(execFile);
 const command = process.argv.slice(2);

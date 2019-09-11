@@ -1,6 +1,6 @@
-import http from 'http';
+const http = require('http');
 
-export default function serve({ callback, port }) {
+module.exports = function serve({ callback, port }) {
   const server = http.createServer(async (req, res) => {
     if (req.url === '/') {
       res.writeHead(200, { 'Content-Type': 'text/html' });
