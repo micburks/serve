@@ -1,0 +1,17 @@
+{
+  "name": "@micburks/serve",
+  "version": "1.0.0",
+  "description": "serve arbitrary script output",
+  "main": "index.js",
+  "type": "module",
+  "bin": "bin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mickey Burks <brks.mck@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "12.x"
+  }
+}
