@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 
 const {execFile} = require('child_process');
 const {promisify} = require('util');
