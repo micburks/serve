@@ -1,6 +1,6 @@
 {
   "name": "@micburks/serve",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "serve arbitrary script output",
   "main": "index.js",
   "bin": "bin.js",
