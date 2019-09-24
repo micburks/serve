@@ -1,12 +1,12 @@
 
-# serve
+# serve-output
 
 Serve arbitrary script output
 
 ### Usage
 
 ```bash
-npx @micburks/serve script.js
+npx @micburks/serve-output script.js
 ```
 
 ```js
@@ -20,7 +20,7 @@ console.log(`
 
 #### Using modules
 
-`serve` requires Node 12 and runs your script equivalent to
+`serve-output` requires Node 12 and runs your script equivalent to
 
 ```sh
 node --experimental-modules --loader @micburks/jspm-loader script.js
