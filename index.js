@@ -1,7 +1,7 @@
 const http = require('http');
 
 module.exports = function serve({callback, port}) {
-  const port = port || 1337;
+  port = port || 1337;
   const server = http.createServer(async (req, res) => {
     try {
       const content = await callback(req.url);
