@@ -7,17 +7,17 @@ const serve = require('./index.js');
 const run = promisify(execFile);
 const command = process.argv.slice(2);
 
-async function callback(req) {
+async function callback(path) {
   try {
     const {stdout} = await run(
       'node',
-      ['--experimental-modules', '--loader', '@micburks/jspm-loader', ...command],
+      ['--experimental-modules', '--loader', '@micburks/jspm-loader', ...command, path],
       {cwd: process.cwd()}
     );
     return stdout;
-  } catch (e) {
-    console.error(e);
-    return 'error';
+  } catch (error) {
+    console.error(error);
+    return error;
   }
 }
 
