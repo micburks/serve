@@ -1,7 +1,7 @@
 const http = require('http');
 
-module.exports = function serve({callback, port}) {
-  port = port || 1337;
+module.exports = function serve({callback}) {
+  const port = 0;
   const server = http.createServer(async (req, res) => {
     try {
       const content = await callback(req.url);
@@ -15,6 +15,8 @@ module.exports = function serve({callback, port}) {
     }
   });
   server.listen(port, () => {
-    console.log(`serving http://localhost:${port}`);
+    const addr = server.address();
+    console.log(`serving http://localhost:${addr.port}`);
   });
+  return server;
 }

@@ -21,4 +21,8 @@ async function callback(path) {
   }
 }
 
-serve({callback});
+const server = serve({callback});
+
+process.on('exit', () => {
+  server.close();
+});
