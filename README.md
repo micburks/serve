@@ -28,7 +28,7 @@ node --experimental-modules --loader @micburks/jspm-loader script.js
 
 ```js
 // script.js
-import fetch from 'https://dev.jspm.io/whatwg-fetch';
+import fetch from 'https://dev.jspm.io/node-fetch';
 import greet from './greet.js';
 
 (async () => {
