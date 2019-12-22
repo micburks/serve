@@ -1,6 +1,7 @@
-const http = require('http');
 
-module.exports = function serve({callback}) {
+import http from 'http';
+
+export default function serve({callback}) {
   const port = 0;
   const server = http.createServer(async (req, res) => {
     try {

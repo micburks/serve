@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-const {execFile} = require('child_process');
-const {promisify} = require('util');
-const serve = require('./index.js');
+import {execFile} from 'child_process';
+import {promisify} from 'util';
+import serve from './index.js';
 
 const run = promisify(execFile);
 const command = process.argv.slice(2);

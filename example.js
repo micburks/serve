@@ -1,4 +1,4 @@
-// index.js
+
 import h from 'https://dev.jspm.io/hyperscript';
 
 const rendered = (

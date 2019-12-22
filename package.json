@@ -2,9 +2,11 @@
   "name": "@micburks/serve-output",
   "version": "1.0.10",
   "description": "serve arbitrary script output",
+  "type": "module",
   "main": "index.js",
   "bin": "bin.js",
   "scripts": {
+    "start": "./bin.js example.js",
     "test": "echo nah"
   },
   "author": "Mickey Burks <brks.mck@gmail.com>",
@@ -14,9 +16,12 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "@micburks/jspm-loader": "^1.0.0"
+    "@micburks/jspm-loader": "^1.0.1"
+  },
+  "devDependencies": {
+    "@micburks/jspm-loader": "^1.0.1"
   },
   "engines": {
-    "node": "12.x"
+    "node": ">=13.2.0"
   }
 }
