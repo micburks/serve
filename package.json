@@ -5,6 +5,10 @@
   "type": "module",
   "main": "index.js",
   "bin": "bin.js",
+  "files": [
+    "index.js",
+    "bin.js"
+  ],
   "scripts": {
     "start": "./bin.js example.js",
     "test": "echo nah"
