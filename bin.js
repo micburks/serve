@@ -11,7 +11,7 @@ async function callback(path) {
   try {
     const {stdout} = await run(
       'node',
-      ['--experimental-modules', '--loader', '@micburks/jspm-loader', ...command, path],
+      ['--loader', '@micburks/jspm-loader', ...command, path],
       {cwd: process.cwd()}
     );
     return stdout;
